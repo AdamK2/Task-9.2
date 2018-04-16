@@ -1,14 +1,13 @@
-var a = 2;
-var b = 3;
-var a = prompt("Type value a");
-var b = prompt("Type value b");
-var value = (a * a) - (2 * a * b) - (b * b);
-console.log("Result is: "+ value); 
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var allNames = femaleNames.concat(maleNames);
 
-if (value > 0) {
-    console.log("Result positive")
-} else if (value < 0) {
-    console.log("Result negative")
-} else {
-    console.log("Result equals zero")
+var newName = 'Marian';
+if (allNames.indexOf(newName) === -1) {
+	var x = allNames.push(newName);
+	console.log(allNames);    	
+}
+else {	
+	console.log('Imię ' + newName + ' jest już w tablicy');
+	console.log(allNames);
 }
